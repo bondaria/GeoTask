@@ -405,7 +405,8 @@ var app = {
         });
         
     	$addEntryPage.find("._cancelEntry").click(function(e) {
-        	$addEntryPage.hide();
+        	alert("test message!")
+    		$addEntryPage.hide();
 			$viewMapPage.show();
         	$enrtiesPage.show();
         });

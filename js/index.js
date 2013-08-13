@@ -168,7 +168,7 @@ var app = {
 				arTypes.push('bank')
 				//alert(arTypes)
 			}
-			var request = { location: myLocation, radius: '800', types: arTypes }; 
+			var request = { location: myLocation, radius: '1000', types: arTypes }; 
 			  infowindow = new google.maps.InfoWindow();
 
 			var service = new google.maps.places.PlacesService(MapEl.map);
@@ -405,8 +405,7 @@ var app = {
         });
         
     	$addEntryPage.find("._cancelEntry").click(function(e) {
-        	alert("test message!")
-    		$addEntryPage.hide();
+        	$addEntryPage.hide();
 			$viewMapPage.show();
         	$enrtiesPage.show();
         });

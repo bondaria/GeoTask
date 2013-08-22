@@ -18,7 +18,7 @@
  */
 var geo = {};
 var arTypes = []	
-
+//dummy comment
 var places = {
 		bank: false,
 		store: false,

@@ -18,7 +18,7 @@
  */
 var geo = {};
 var arTypes = []	
-//dummy comment
+
 var places = {
 		bank: false,
 		store: false,
@@ -168,9 +168,10 @@ var app = {
 				arTypes.push('bank')
 				//alert(arTypes)
 			}
-			var request = { location: myLocation, radius: '1000', types: arTypes }; 
+			var request = { location: myLocation, radius: '1000', types: arTypes }; //basic google maps 
 			  infowindow = new google.maps.InfoWindow();
 
+		  
 			var service = new google.maps.places.PlacesService(MapEl.map);
 			service.nearbySearch(request, callback);
 
